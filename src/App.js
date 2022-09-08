@@ -5,11 +5,13 @@ import Home from "./Pages/Home";
 import Series from "./Pages/Series";
 import Comics from "./Pages/Comics";
 import Error404 from "./Pages/Error404";
+import Header from "./Components/Header";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/inicio" element={<Home />} />
