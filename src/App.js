@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "semantic-ui-css/semantic.min.css";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Series from "./Pages/Series";
+import Comics from "./Pages/Comics";
+import Error404 from "./Pages/Error404";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/inicio" element={<Home />} />
+          <Route path="/series" element={<Series />} />
+          <Route path="/comics" element={<Comics />} />
+          <Route element={<Error404 />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
