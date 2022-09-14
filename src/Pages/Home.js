@@ -1,7 +1,12 @@
+import BestCharacters from "../Components/BestCharacters";
+import ListLastEvents from "../Components/ListLastEvents";
+//import Insider from "../Components/Insider";
+
 export default function Home() {
   return (
     <div>
-      <p>Estamos dentro de la Home</p>
+      <BestCharacters />
+      <ListLastEvents />
     </div>
   );
 }

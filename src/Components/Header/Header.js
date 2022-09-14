@@ -8,7 +8,7 @@ export default function Header() {
   const finalCurrenPath = currenPath.pathname.replace("/", "");
 
   const [activeItem, setActiveItem] = useState(finalCurrenPath);
-  console.log(activeItem);
+
   const navigate = useNavigate();
 
   const handleItemClick = (e, { name }) => {
