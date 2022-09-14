@@ -1,0 +1,21 @@
+.list-series {
+    .header {
+        height: 80px;
+    }
+
+    .description {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100px;
+    }
+    .image {
+        height: 300px;
+        display: flex !important;
+    }
+}
+.container.button {
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+}

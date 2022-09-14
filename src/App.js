@@ -12,7 +12,7 @@ function App() {
   const exampleApi = useFetch(
     "http://gateway.marvel.com/v1/public/comics?ts=1&apikey=8e67284170c9c7fc7e385f9de69aa5b9&hash=7de38110c0f90cc82da3aa65edc0bd53"
   );
-  console.log(exampleApi);
+
   return (
     <div className="App">
       <Router>
