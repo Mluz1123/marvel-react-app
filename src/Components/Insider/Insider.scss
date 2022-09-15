@@ -1,0 +1,42 @@
+.container-insider {
+    background: #000;
+    padding: 40px 0;
+
+    .column {
+        display: flex;
+        align-items: center;
+
+        .header {
+            text-align: center;
+        }
+        h1 {
+            margin:  20px 0;
+            color: #e62429;
+            letter-spacing: 3px;
+        }
+        h3 {
+            color: #fff;
+            font-weight: 800;
+            margin: 0 0 10px;
+            font-size: 26px !important;
+        }
+
+        h6 {
+            letter-spacing: 0.5px;
+            color: #fff;
+            font-weight: 400;
+            font-size: 16px !important;
+            max-width: 500px;
+            margin: 0 0 20px;
+        }
+    }
+
+    &-content-button {
+        text-align: center;
+
+        .button {
+            background: #e62429;
+            color: #fff;
+        }
+    }
+}
